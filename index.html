@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="converter-wrapper">
+            <input type="text" id="output-display">
+            
+              <input type="number" id="input" placeholder="Input"
+                minlength="1" maxlength="9" required>
+                <ul>
+                  <li>
+                    <button onclick="convert()"
+                      value="To Fahrenheit"
+                       id="fahrenheit"
+                        class="operators">
+                        To Fahrenheit
+                    </button>
+                  </li>
+                  <li>
+                    <button onclick="convertTwo()"
+                     value="To Celsius"
+                      id="celsius"
+                       class="operators">
+                        To Celsius
+                    </button>
+                  </li>
+                </ul>
+           
+
+           <button onclick="resetValues()" id="reset">Reset</button>
+
+        </div>
+        </div>
+            
+        </div>
+    </div>
+    <script src="./function.js"></script>
+</body>
+</html>
