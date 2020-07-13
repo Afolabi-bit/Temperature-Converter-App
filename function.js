@@ -3,8 +3,12 @@ function convert() {
     number = Number(document.getElementById("input").value);
     fahrenheit = document.getElementById("fahrenheit");
     answer = document.getElementById("output-display");
-    
+        
+    if (number == "") {
+        answer.value = null;
+    } else {
        answer.value = (number * 9/5) + 32  + "deg Fahrenheit";
+    }
 }
 
 function convertTwo() {
@@ -12,8 +16,12 @@ function convertTwo() {
     number = Number(document.getElementById("input").value);
     celsius = document.getElementById("celsius")
     answer = document.getElementById("output-display");
-
-    answer.value = (number - 32) * 5/9 + "deg Celsius";
+    
+    if (number == "") {
+        answer.value = null;
+    } else {
+     answer.value = (number - 32) * 5/9 + "deg Celsius";
+    }
 }
 
 function resetValues() {
